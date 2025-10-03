@@ -1,0 +1,56 @@
+:root {
+  --primary: #1371EB;
+  --secondary: #782BC6;
+  --success: #25C967;
+  --warning: #EB9F31;
+  --danger: #F10A62;
+  --black: #000;
+  --white: #fff;
+}
+
+
+html:root {
+  --el-color-primary: var(--primary);
+  --el-color-success: var(--success);
+  --el-color-warning: var(--warning);
+  --el-color-danger: var(--danger);
+
+  --el-color-primary-light-3: color-mix(in srgb, var(--primary), var(--white) 30%);
+  --el-color-primary-light-5: color-mix(in srgb, var(--primary), var(--white) 50%);
+  --el-color-primary-light-7: color-mix(in srgb, var(--primary), var(--white) 70%);
+  --el-color-primary-light-9: color-mix(in srgb, var(--primary), var(--white) 90%);
+  --el-color-primary-dark-2: color-mix(in srgb, var(--primary),  var(--black) 20%);
+
+
+  --el-color-success-light-3: color-mix(in srgb, var(--success), var(--white) 30%);
+  --el-color-success-light-5: color-mix(in srgb, var(--success), var(--white) 50%);
+  --el-color-success-light-7: color-mix(in srgb, var(--success), var(--white) 70%);
+  --el-color-success-light-9: color-mix(in srgb, var(--success), var(--white) 90%);
+  --el-color-success-dark-2: color-mix(in srgb, var(--success),  var(--black) 20%);
+
+
+  --el-color-warning-light-3: color-mix(in srgb, var(--warning), var(--white) 30%);
+  --el-color-warning-light-5: color-mix(in srgb, var(--warning), var(--white) 50%);
+  --el-color-warning-light-7: color-mix(in srgb, var(--warning), var(--white) 70%);
+  --el-color-warning-light-9: color-mix(in srgb, var(--warning), var(--white) 90%);
+  --el-color-warning-dark-2: color-mix(in srgb, var(--warning),  var(--black) 20%);
+
+
+  --el-color-danger-light-3: color-mix(in srgb, var(--danger), var(--white) 30%);
+  --el-color-danger-light-5: color-mix(in srgb, var(--danger), var(--white) 50%);
+  --el-color-danger-light-7: color-mix(in srgb, var(--danger), var(--white) 70%);
+  --el-color-danger-light-9: color-mix(in srgb, var(--danger), var(--white) 90%);
+  --el-color-danger-dark-2: color-mix(in srgb, var(--danger),  var(--black) 20%);
+
+
+  --el-text-color-primary: var(--black);
+
+}
+
+body {
+  background: #f5f5f5;
+}
+
+#app .el-input {
+  --el-input-border-radius: 9999px;
+}

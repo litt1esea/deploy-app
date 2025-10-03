@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../src/preload/index.ts"],
+  "sourcesContent": ["const  { contextBridge, ipcRenderer } = require(\"electron\")\r\n\r\ncontextBridge.exposeInMainWorld(\"electronApi\", {\r\n    exit: () => ipcRenderer.invoke(\"system:exit\"),\r\n    requestData: async (...args) => await ipcRenderer.invoke('api:requestData', ...args),\r\n    selectWorkDir: async () => await ipcRenderer.invoke('system:selectWorkDir'),\r\n    selectPrivateKey: async () => await ipcRenderer.invoke('system:selectPrivateKey')\r\n})"],
+  "mappings": ";AAAA,IAAO,EAAE,eAAe,YAAY,IAAI,QAAQ,UAAU;AAE1D,cAAc,kBAAkB,eAAe;AAAA,EAC3C,MAAM,MAAM,YAAY,OAAO,aAAa;AAAA,EAC5C,aAAa,UAAU,SAAS,MAAM,YAAY,OAAO,mBAAmB,GAAG,IAAI;AAAA,EACnF,eAAe,YAAY,MAAM,YAAY,OAAO,sBAAsB;AAAA,EAC1E,kBAAkB,YAAY,MAAM,YAAY,OAAO,yBAAyB;AACpF,CAAC;",
+  "names": []
+}

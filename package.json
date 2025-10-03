@@ -1,0 +1,35 @@
+{
+  "name": "electron-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ./script/dev/index.mjs",
+    "release": "node ./script/release/index.mjs"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^5.0.4",
+    "electron": "^30.0.8",
+    "electron-builder": "^24.13.3",
+    "esbuild": "0.21.3",
+    "vite": "^5.2.11"
+  },
+  "dependencies": {
+    "archiver": "^7.0.1",
+    "body-parser": "^2.2.0",
+    "compressing": "^2.0.0",
+    "cors": "^2.8.5",
+    "dayjs": "^1.11.18",
+    "element-plus": "^2.11.2",
+    "express": "^5.1.0",
+    "fs-extra": "^11.3.1",
+    "node-ssh": "^13.2.1",
+    "vue-router": "^4.5.1",
+    "vuetify": "^3.10.2"
+  }
+}

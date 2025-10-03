@@ -1,0 +1,27 @@
+import { createWebHistory, createRouter, createWebHashHistory } from 'vue-router'
+
+import HomeView from '@/renderer/pages/Home/index.vue'
+import EnvEdit from '@/renderer/pages/EnvEdit/index.vue'
+
+const routes = [
+  {
+    path: '/',
+    name: 'Home',
+    component: HomeView
+  },
+  {
+    name: 'EnvEdit',
+    path: '/env',
+    component: EnvEdit,
+    props: true,
+  },
+]
+
+const router = createRouter({
+  history: createWebHistory(),
+  routes,
+})
+
+
+
+export default router
