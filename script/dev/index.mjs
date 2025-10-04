@@ -128,7 +128,9 @@ const dev = {
 
     let script = ''
     for (const k of Object.keys(new_env)) {
-      script += `process.env.${k} = '${new_env[k]}';`
+      // 转义反斜杠以避免八进制转义序列问题
+      const value = new_env[k].toString().replace(/\\/g, '\\\\')
+      script += `process.env.${k} = '${value}';`
     }
     return script
   },

@@ -1,4 +1,4 @@
-process.env.APP_VERSION = '1.0.0';process.env.ENV_NOW = 'dev';process.env.WEB_PORT = '1600';process.env.RES_DIR = 'D:\workspace\deploy-app\resource\release';
+process.env.APP_VERSION = '1.0.0';process.env.ENV_NOW = 'dev';process.env.WEB_PORT = '1600';process.env.RES_DIR = 'C:\\Users\\53215\\Desktop\\Work\\project\\deploy-app\\resource\\release';
 
           import { createRequire } from 'module';
           import { fileURLToPath } from 'url';
@@ -104539,12 +104539,25 @@ app.on("ready", () => {
     width: 800,
     height: 600,
     webPreferences: {
-      preload: path3.join(__dirname, "preload.js")
+      preload: path3.join(__dirname, "preload.js"),
+      nodeIntegration: false,
+      contextIsolation: true,
+      devTools: true
+      // webSecurity: false,
+      // experimentalFeatures: true,
+      // enableRemoteModule: false,
       // sandbox: false,
     }
   });
   mainWindow.loadURL(url);
-  mainWindow.webContents.openDevTools();
+  mainWindow.webContents.once("did-finish-load", () => {
+    try {
+      mainWindow.webContents.openDevTools();
+      log2("DevTools opened successfully");
+    } catch (error) {
+      log2("Failed to open DevTools:", error);
+    }
+  });
   log2(`electron load ${url}`);
   ipcMain.handle("system:exit", () => {
     app.quit();
@@ -104572,6 +104585,10 @@ app.on("ready", () => {
         {
           label: "\u5173\u4E8E",
           role: "about"
+        },
+        {
+          label: "\u5F00\u53D1\u5DE5\u5177",
+          role: "toggleDevTools"
         }
       ]
     },

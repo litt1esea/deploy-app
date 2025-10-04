@@ -2,6 +2,7 @@ import { createWebHistory, createRouter, createWebHashHistory } from 'vue-router
 
 import HomeView from '@/renderer/pages/Home/index.vue'
 import EnvEdit from '@/renderer/pages/EnvEdit/index.vue'
+import AddApplication from '@/renderer/pages/AddApplication/index.vue'
 
 const routes = [
   {
@@ -15,6 +16,12 @@ const routes = [
     component: EnvEdit,
     props: true,
   },
+  {
+    name: 'AddApplication',
+    path: '/add-application',
+    component: AddApplication,
+    props: true,
+  }
 ]
 
 const router = createRouter({

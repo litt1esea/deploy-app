@@ -3,15 +3,8 @@ import path from 'path'
 // import { fileURLToPath } from 'url'
 import router from './router'
 import './http-server'
-// const getDirName = () => {
-//   if (process.env.ENV_NOW == 'dev') {
-//     const __filename = fileURLToPath(import.meta.url)
-//     const dirname = path.dirname(__filename)
-//     return dirname
-//   } else {
-//     return __dirname
-//   }
-// }
+
+
 
 
 const log = (...args: any[]) => {
@@ -41,11 +34,23 @@ app.on("ready", () => {
     height: 600,
     webPreferences: {
       preload: path.join(__dirname, 'preload.js'),
-      // sandbox: false,
+      nodeIntegration: false,
+      contextIsolation: true,
+      devTools: true,
     }
   });
   mainWindow.loadURL(url)
-  mainWindow.webContents.openDevTools()
+  
+  // 延迟打开DevTools，确保页面加载完成
+  mainWindow.webContents.once('did-finish-load', () => {
+    try {
+      mainWindow.webContents.openDevTools()
+      log('DevTools opened successfully')
+    } catch (error) {
+      log('Failed to open DevTools:', error)
+    }
+  })
+  
   log(`electron load ${url}`)
 
 
@@ -80,6 +85,10 @@ app.on("ready", () => {
           label: '关于',
           role: 'about'
         },
+        {
+          label: '开发工具',
+          role: 'toggleDevTools',
+        }
       ]
     },
     {

@@ -10,7 +10,7 @@ import { useRouter } from 'vue-router'
 
 const router = useRouter()
 function onAddApplication() {
-  // router.push('/env')
+  router.push('/add-application')
 }
 
 </script>
