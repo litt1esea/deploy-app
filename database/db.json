@@ -1,126 +1,6 @@
 {
   "appList": [
     {
-      "appName": "emind-station",
-      "appWorkDir": "d:\\workspace\\emind-station-ui",
-      "envList": [
-        {
-          "envName": "dev",
-          "host": "172.19.10.201",
-          "username": "root",
-          "password": "123.com",
-          "uploadDir": "/workspace/html/emind-station",
-          "buildScript": "npm run build",
-          "privateKeyPath": "",
-          "lastDeploy": "2025-09-17 17:22:00",
-          "isBuilding": false,
-          "envId": "9e2b6f8b-e113-41f5-9c64-373b84b2fcd1"
-        },
-        {
-          "envName": "dev",
-          "host": "172.19.10.201",
-          "username": "root",
-          "password": "123.com",
-          "uploadDir": "/workspace/html/emind-station",
-          "buildScript": "npm run build",
-          "privateKeyPath": "",
-          "lastDeploy": null,
-          "isBuilding": false,
-          "envId": "619af8dd-3c23-4cb3-b3c9-11903d8d3069"
-        },
-        {
-          "envName": "dev12",
-          "host": "172.19.10.201",
-          "username": "root",
-          "password": "123.com",
-          "uploadDir": "/workspace/html/emind-station",
-          "buildScript": "npm run build",
-          "privateKeyPath": "",
-          "lastDeploy": null,
-          "isBuilding": false,
-          "envId": "0005d2d2-6762-4103-8fe2-4a483372a0d3"
-        },
-        {
-          "envName": "dev12",
-          "host": "172.19.10.201",
-          "username": "root",
-          "password": "123.com",
-          "uploadDir": "/workspace/html/emind-station",
-          "buildScript": "npm run build",
-          "privateKeyPath": "",
-          "lastDeploy": null,
-          "isBuilding": false,
-          "envId": "5dfa9ec8-416a-429c-85e3-e614218b63a8"
-        },
-        {
-          "envName": "dev12",
-          "host": "172.19.10.201",
-          "username": "root",
-          "password": "123.com",
-          "uploadDir": "/workspace/html/emind-station",
-          "buildScript": "npm run build",
-          "privateKeyPath": "",
-          "lastDeploy": null,
-          "isBuilding": false,
-          "envId": "672cf17e-8125-4e5c-a0dc-4a2b7a4dc9d2"
-        },
-        {
-          "envName": "dev12",
-          "host": "172.19.10.201",
-          "username": "root",
-          "password": "123.com",
-          "uploadDir": "/workspace/html/emind-station",
-          "buildScript": "npm run build",
-          "privateKeyPath": "",
-          "lastDeploy": null,
-          "isBuilding": false,
-          "envId": "2fa5b025-6a93-44c6-b3d7-083e39c2c374"
-        }
-      ],
-      "appId": "f28b762f-7fa4-4647-9f39-a7b626bb6113"
-    },
-    {
-      "appName": "e-center",
-      "appWorkDir": "d:\\workspace\\ecenter-ui",
-      "envList": [
-        {
-          "envName": "dev",
-          "host": "192.168.0.230",
-          "username": "root",
-          "password": "Development!@#$%^230",
-          "uploadDir": "/workspace/html/ecenter-ui",
-          "buildScript": "npm run build",
-          "lastDeploy": "2025-09-17 16:47:35",
-          "isBuilding": false,
-          "envId": "3e78ceea-d346-4c19-aa9c-a710b08321cd"
-        },
-        {
-          "envName": "test",
-          "host": "192.168.0.233",
-          "username": "root",
-          "password": "Development!@#$%^233",
-          "uploadDir": "/workspace/html/ecenter-ui",
-          "buildScript": "npm run build",
-          "lastDeploy": "2024-06-02 09:54:02",
-          "envId": "f3924789-2614-41dd-b4b1-eac1b752cbcd",
-          "isBuilding": false
-        },
-        {
-          "envName": "prod",
-          "host": "120.24.184.101",
-          "username": "root",
-          "password": "Jdny@!@#101",
-          "uploadDir": "/workspace/ecenter/ecenter-web",
-          "buildScript": "npm run build",
-          "privateKeyPath": "C:\\Users\\Administrator\\.ssh\\id_rsa",
-          "lastDeploy": null,
-          "isBuilding": false,
-          "envId": "b42eab3f-7aa7-4e40-9c53-8e35eac36a37"
-        }
-      ],
-      "appId": "49b58c44-1085-4335-86ac-1b4db701f9ff"
-    },
-    {
       "appName": "eVpp",
       "appWorkDir": "D:\\workspace\\vpp-v2",
       "envList": [
@@ -131,7 +11,7 @@
           "password": "Development!@#$%^234",
           "uploadDir": "/workspace/html/emind-vpp",
           "buildScript": "npm run build:prod",
-          "lastDeploy": "2025-06-27 15:34:03",
+          "lastDeploy": "2025-10-04 13:32:15",
           "isBuilding": false,
           "envId": "1545ba04-7909-4f12-acbf-3cf32252bd32"
         },
@@ -161,7 +41,7 @@
           "uploadDir": "/workspace/html/emind-ui-next-http",
           "buildScript": "npm run build:prod",
           "privateKeyPath": "",
-          "lastDeploy": "2025-09-12 11:51:33",
+          "lastDeploy": "2025-10-04 13:31:48",
           "isBuilding": false,
           "envId": "d65a0133-6fab-4caf-8ad1-746bde299b66"
         },
@@ -173,12 +53,18 @@
           "uploadDir": "/workspace/html/emind-ui-next",
           "buildScript": "npm run build:prod",
           "privateKeyPath": "",
-          "lastDeploy": "2025-09-17 16:56:31",
+          "lastDeploy": "2025-10-04 13:31:06",
           "isBuilding": false,
           "envId": "c866829c-f284-45f7-ab2d-77a314cda206"
         }
       ],
       "appId": "fc31f7c9-ff0c-4ebd-90f6-27328a7bce46"
+    },
+    {
+      "appName": "App",
+      "appWorkDir": "C:\\Users\\53215\\Desktop\\Work\\project\\pick-a-color",
+      "envList": [],
+      "appId": "cbaa3545-05ac-4353-bd5a-a2faed5b4c54"
     }
   ],
   "history": [
@@ -904,6 +790,555 @@
       "status": "failed",
       "st": "2025-09-17 17:20:35",
       "et": "2025-09-17 17:22:00"
+    },
+    {
+      "config": {
+        "appName": "eMind-Cloud",
+        "appWorkDir": "D:\\workspace\\emind-ui-next",
+        "uploadFile": "dist.zip",
+        "envName": "dev",
+        "host": "192.168.0.230",
+        "username": "root",
+        "password": "Development!@#$%^230",
+        "uploadDir": "/workspace/html/emind-ui-next",
+        "buildScript": "npm run build:prod",
+        "privateKeyPath": "",
+        "lastDeploy": "2025-09-17 16:56:31",
+        "isBuilding": false,
+        "envId": "c866829c-f284-45f7-ab2d-77a314cda206"
+      },
+      "taskId": "fab922f0-f1bb-4824-acb2-8f207ebabbe7",
+      "isRunning": false,
+      "status": "failed",
+      "st": "2025-10-04 13:30:55",
+      "et": "2025-10-04 13:30:55"
+    },
+    {
+      "config": {
+        "appName": "eMind-Cloud",
+        "appWorkDir": "D:\\workspace\\emind-ui-next",
+        "uploadFile": "dist.zip",
+        "envName": "dev",
+        "host": "192.168.0.230",
+        "username": "root",
+        "password": "Development!@#$%^230",
+        "uploadDir": "/workspace/html/emind-ui-next",
+        "buildScript": "npm run build:prod",
+        "privateKeyPath": "",
+        "lastDeploy": "2025-10-04 13:30:55",
+        "isBuilding": false,
+        "envId": "c866829c-f284-45f7-ab2d-77a314cda206"
+      },
+      "taskId": "dac3ff18-c820-4267-9c54-7758f6520468",
+      "isRunning": false,
+      "status": "failed",
+      "st": "2025-10-04 13:30:56",
+      "et": "2025-10-04 13:30:56"
+    },
+    {
+      "config": {
+        "appName": "eMind-Cloud",
+        "appWorkDir": "D:\\workspace\\emind-ui-next",
+        "uploadFile": "dist.zip",
+        "envName": "dev",
+        "host": "192.168.0.230",
+        "username": "root",
+        "password": "Development!@#$%^230",
+        "uploadDir": "/workspace/html/emind-ui-next",
+        "buildScript": "npm run build:prod",
+        "privateKeyPath": "",
+        "lastDeploy": "2025-10-04 13:30:56",
+        "isBuilding": false,
+        "envId": "c866829c-f284-45f7-ab2d-77a314cda206"
+      },
+      "taskId": "e0ea4d53-153b-453b-af84-147cbaf2535a",
+      "isRunning": false,
+      "status": "failed",
+      "st": "2025-10-04 13:30:57",
+      "et": "2025-10-04 13:30:57"
+    },
+    {
+      "config": {
+        "appName": "eMind-Cloud",
+        "appWorkDir": "D:\\workspace\\emind-ui-next",
+        "uploadFile": "dist.zip",
+        "envName": "dev",
+        "host": "192.168.0.230",
+        "username": "root",
+        "password": "Development!@#$%^230",
+        "uploadDir": "/workspace/html/emind-ui-next",
+        "buildScript": "npm run build:prod",
+        "privateKeyPath": "",
+        "lastDeploy": "2025-10-04 13:30:57",
+        "isBuilding": false,
+        "envId": "c866829c-f284-45f7-ab2d-77a314cda206"
+      },
+      "taskId": "0106d5e9-dfdf-4170-bcbb-658fb3bab268",
+      "isRunning": false,
+      "status": "failed",
+      "st": "2025-10-04 13:30:57",
+      "et": "2025-10-04 13:30:57"
+    },
+    {
+      "config": {
+        "appName": "eMind-Cloud",
+        "appWorkDir": "D:\\workspace\\emind-ui-next",
+        "uploadFile": "dist.zip",
+        "envName": "dev",
+        "host": "192.168.0.230",
+        "username": "root",
+        "password": "Development!@#$%^230",
+        "uploadDir": "/workspace/html/emind-ui-next",
+        "buildScript": "npm run build:prod",
+        "privateKeyPath": "",
+        "lastDeploy": "2025-10-04 13:30:57",
+        "isBuilding": false,
+        "envId": "c866829c-f284-45f7-ab2d-77a314cda206"
+      },
+      "taskId": "6289903c-0833-4c6c-a9e5-cba723e62f6b",
+      "isRunning": false,
+      "status": "failed",
+      "st": "2025-10-04 13:30:57",
+      "et": "2025-10-04 13:30:58"
+    },
+    {
+      "config": {
+        "appName": "eMind-Cloud",
+        "appWorkDir": "D:\\workspace\\emind-ui-next",
+        "uploadFile": "dist.zip",
+        "envName": "dev",
+        "host": "192.168.0.230",
+        "username": "root",
+        "password": "Development!@#$%^230",
+        "uploadDir": "/workspace/html/emind-ui-next",
+        "buildScript": "npm run build:prod",
+        "privateKeyPath": "",
+        "lastDeploy": "2025-10-04 13:30:58",
+        "isBuilding": false,
+        "envId": "c866829c-f284-45f7-ab2d-77a314cda206"
+      },
+      "taskId": "55ce21b0-c54e-43de-88ff-185045654ca0",
+      "isRunning": false,
+      "status": "failed",
+      "st": "2025-10-04 13:30:58",
+      "et": "2025-10-04 13:30:58"
+    },
+    {
+      "config": {
+        "appName": "eMind-Cloud",
+        "appWorkDir": "D:\\workspace\\emind-ui-next",
+        "uploadFile": "dist.zip",
+        "envName": "dev",
+        "host": "192.168.0.230",
+        "username": "root",
+        "password": "Development!@#$%^230",
+        "uploadDir": "/workspace/html/emind-ui-next",
+        "buildScript": "npm run build:prod",
+        "privateKeyPath": "",
+        "lastDeploy": "2025-10-04 13:30:58",
+        "isBuilding": false,
+        "envId": "c866829c-f284-45f7-ab2d-77a314cda206"
+      },
+      "taskId": "245860b8-d997-43ad-be63-3e2db57824cd",
+      "isRunning": false,
+      "status": "failed",
+      "st": "2025-10-04 13:31:01",
+      "et": "2025-10-04 13:31:01"
+    },
+    {
+      "config": {
+        "appName": "eMind-Cloud",
+        "appWorkDir": "D:\\workspace\\emind-ui-next",
+        "uploadFile": "dist.zip",
+        "envName": "dev",
+        "host": "192.168.0.230",
+        "username": "root",
+        "password": "Development!@#$%^230",
+        "uploadDir": "/workspace/html/emind-ui-next",
+        "buildScript": "npm run build:prod",
+        "privateKeyPath": "",
+        "lastDeploy": "2025-10-04 13:31:01",
+        "isBuilding": false,
+        "envId": "c866829c-f284-45f7-ab2d-77a314cda206"
+      },
+      "taskId": "04eddbb4-7b25-4212-87ba-f1b3d0e9de5a",
+      "isRunning": false,
+      "status": "failed",
+      "st": "2025-10-04 13:31:03",
+      "et": "2025-10-04 13:31:03"
+    },
+    {
+      "config": {
+        "appName": "eMind-Cloud",
+        "appWorkDir": "D:\\workspace\\emind-ui-next",
+        "uploadFile": "dist.zip",
+        "envName": "dev",
+        "host": "192.168.0.230",
+        "username": "root",
+        "password": "Development!@#$%^230",
+        "uploadDir": "/workspace/html/emind-ui-next",
+        "buildScript": "npm run build:prod",
+        "privateKeyPath": "",
+        "lastDeploy": "2025-10-04 13:31:03",
+        "isBuilding": false,
+        "envId": "c866829c-f284-45f7-ab2d-77a314cda206"
+      },
+      "taskId": "b324df9a-0deb-4e42-8a36-5b6811a0bb81",
+      "isRunning": false,
+      "status": "failed",
+      "st": "2025-10-04 13:31:03",
+      "et": "2025-10-04 13:31:03"
+    },
+    {
+      "config": {
+        "appName": "eMind-Cloud",
+        "appWorkDir": "D:\\workspace\\emind-ui-next",
+        "uploadFile": "dist.zip",
+        "envName": "dev",
+        "host": "192.168.0.230",
+        "username": "root",
+        "password": "Development!@#$%^230",
+        "uploadDir": "/workspace/html/emind-ui-next",
+        "buildScript": "npm run build:prod",
+        "privateKeyPath": "",
+        "lastDeploy": "2025-10-04 13:31:03",
+        "isBuilding": false,
+        "envId": "c866829c-f284-45f7-ab2d-77a314cda206"
+      },
+      "taskId": "eb3233d5-2358-45e9-b46b-5b88dd2e4628",
+      "isRunning": false,
+      "status": "failed",
+      "st": "2025-10-04 13:31:03",
+      "et": "2025-10-04 13:31:04"
+    },
+    {
+      "config": {
+        "appName": "eMind-Cloud",
+        "appWorkDir": "D:\\workspace\\emind-ui-next",
+        "uploadFile": "dist.zip",
+        "envName": "dev",
+        "host": "192.168.0.230",
+        "username": "root",
+        "password": "Development!@#$%^230",
+        "uploadDir": "/workspace/html/emind-ui-next",
+        "buildScript": "npm run build:prod",
+        "privateKeyPath": "",
+        "lastDeploy": "2025-10-04 13:31:04",
+        "isBuilding": false,
+        "envId": "c866829c-f284-45f7-ab2d-77a314cda206"
+      },
+      "taskId": "f809e5a7-3996-4bef-bb9d-8547c921adc5",
+      "isRunning": false,
+      "status": "failed",
+      "st": "2025-10-04 13:31:04",
+      "et": "2025-10-04 13:31:04"
+    },
+    {
+      "config": {
+        "appName": "eMind-Cloud",
+        "appWorkDir": "D:\\workspace\\emind-ui-next",
+        "uploadFile": "dist.zip",
+        "envName": "dev",
+        "host": "192.168.0.230",
+        "username": "root",
+        "password": "Development!@#$%^230",
+        "uploadDir": "/workspace/html/emind-ui-next",
+        "buildScript": "npm run build:prod",
+        "privateKeyPath": "",
+        "lastDeploy": "2025-10-04 13:31:04",
+        "isBuilding": false,
+        "envId": "c866829c-f284-45f7-ab2d-77a314cda206"
+      },
+      "taskId": "3592036a-7c7e-4f24-a1fc-8b6e33086341",
+      "isRunning": false,
+      "status": "failed",
+      "st": "2025-10-04 13:31:04",
+      "et": "2025-10-04 13:31:04"
+    },
+    {
+      "config": {
+        "appName": "eMind-Cloud",
+        "appWorkDir": "D:\\workspace\\emind-ui-next",
+        "uploadFile": "dist.zip",
+        "envName": "dev",
+        "host": "192.168.0.230",
+        "username": "root",
+        "password": "Development!@#$%^230",
+        "uploadDir": "/workspace/html/emind-ui-next",
+        "buildScript": "npm run build:prod",
+        "privateKeyPath": "",
+        "lastDeploy": "2025-10-04 13:31:04",
+        "isBuilding": false,
+        "envId": "c866829c-f284-45f7-ab2d-77a314cda206"
+      },
+      "taskId": "0f7b78db-276c-4321-ac29-f71c23ec517c",
+      "isRunning": false,
+      "status": "failed",
+      "st": "2025-10-04 13:31:05",
+      "et": "2025-10-04 13:31:05"
+    },
+    {
+      "config": {
+        "appName": "eMind-Cloud",
+        "appWorkDir": "D:\\workspace\\emind-ui-next",
+        "uploadFile": "dist.zip",
+        "envName": "dev",
+        "host": "192.168.0.230",
+        "username": "root",
+        "password": "Development!@#$%^230",
+        "uploadDir": "/workspace/html/emind-ui-next",
+        "buildScript": "npm run build:prod",
+        "privateKeyPath": "",
+        "lastDeploy": "2025-10-04 13:31:05",
+        "isBuilding": false,
+        "envId": "c866829c-f284-45f7-ab2d-77a314cda206"
+      },
+      "taskId": "b5a842ff-2e75-4900-b829-7be94b67cfb4",
+      "isRunning": false,
+      "status": "failed",
+      "st": "2025-10-04 13:31:05",
+      "et": "2025-10-04 13:31:05"
+    },
+    {
+      "config": {
+        "appName": "eMind-Cloud",
+        "appWorkDir": "D:\\workspace\\emind-ui-next",
+        "uploadFile": "dist.zip",
+        "envName": "dev",
+        "host": "192.168.0.230",
+        "username": "root",
+        "password": "Development!@#$%^230",
+        "uploadDir": "/workspace/html/emind-ui-next",
+        "buildScript": "npm run build:prod",
+        "privateKeyPath": "",
+        "lastDeploy": "2025-10-04 13:31:05",
+        "isBuilding": false,
+        "envId": "c866829c-f284-45f7-ab2d-77a314cda206"
+      },
+      "taskId": "74a3d968-399f-4258-a96b-dc2cc9609188",
+      "isRunning": false,
+      "status": "failed",
+      "st": "2025-10-04 13:31:05",
+      "et": "2025-10-04 13:31:05"
+    },
+    {
+      "config": {
+        "appName": "eMind-Cloud",
+        "appWorkDir": "D:\\workspace\\emind-ui-next",
+        "uploadFile": "dist.zip",
+        "envName": "dev",
+        "host": "192.168.0.230",
+        "username": "root",
+        "password": "Development!@#$%^230",
+        "uploadDir": "/workspace/html/emind-ui-next",
+        "buildScript": "npm run build:prod",
+        "privateKeyPath": "",
+        "lastDeploy": "2025-10-04 13:31:05",
+        "isBuilding": false,
+        "envId": "c866829c-f284-45f7-ab2d-77a314cda206"
+      },
+      "taskId": "e23a953a-eb90-4ede-8eab-05beeaebe7f2",
+      "isRunning": false,
+      "status": "failed",
+      "st": "2025-10-04 13:31:05",
+      "et": "2025-10-04 13:31:05"
+    },
+    {
+      "config": {
+        "appName": "eMind-Cloud",
+        "appWorkDir": "D:\\workspace\\emind-ui-next",
+        "uploadFile": "dist.zip",
+        "envName": "dev",
+        "host": "192.168.0.230",
+        "username": "root",
+        "password": "Development!@#$%^230",
+        "uploadDir": "/workspace/html/emind-ui-next",
+        "buildScript": "npm run build:prod",
+        "privateKeyPath": "",
+        "lastDeploy": "2025-10-04 13:31:05",
+        "isBuilding": false,
+        "envId": "c866829c-f284-45f7-ab2d-77a314cda206"
+      },
+      "taskId": "2d1963e4-feec-433a-97bd-e778ce47e366",
+      "isRunning": false,
+      "status": "failed",
+      "st": "2025-10-04 13:31:05",
+      "et": "2025-10-04 13:31:05"
+    },
+    {
+      "config": {
+        "appName": "eMind-Cloud",
+        "appWorkDir": "D:\\workspace\\emind-ui-next",
+        "uploadFile": "dist.zip",
+        "envName": "dev",
+        "host": "192.168.0.230",
+        "username": "root",
+        "password": "Development!@#$%^230",
+        "uploadDir": "/workspace/html/emind-ui-next",
+        "buildScript": "npm run build:prod",
+        "privateKeyPath": "",
+        "lastDeploy": "2025-10-04 13:31:05",
+        "isBuilding": false,
+        "envId": "c866829c-f284-45f7-ab2d-77a314cda206"
+      },
+      "taskId": "37bd2dcf-0f9f-406f-af8c-cdd54aacf3b8",
+      "isRunning": false,
+      "status": "failed",
+      "st": "2025-10-04 13:31:06",
+      "et": "2025-10-04 13:31:06"
+    },
+    {
+      "config": {
+        "appName": "eMind-Cloud",
+        "appWorkDir": "D:\\workspace\\emind-ui-next",
+        "uploadFile": "dist.zip",
+        "envName": "dev",
+        "host": "192.168.0.230",
+        "username": "root",
+        "password": "Development!@#$%^230",
+        "uploadDir": "/workspace/html/emind-ui-next",
+        "buildScript": "npm run build:prod",
+        "privateKeyPath": "",
+        "lastDeploy": "2025-10-04 13:31:06",
+        "isBuilding": false,
+        "envId": "c866829c-f284-45f7-ab2d-77a314cda206"
+      },
+      "taskId": "3c5f5f45-bc52-4637-b3b8-67a6444d8637",
+      "isRunning": false,
+      "status": "failed",
+      "st": "2025-10-04 13:31:06",
+      "et": "2025-10-04 13:31:06"
+    },
+    {
+      "config": {
+        "appName": "eMind-Cloud",
+        "appWorkDir": "D:\\workspace\\emind-ui-next",
+        "uploadFile": "dist.zip",
+        "envName": "dev",
+        "host": "192.168.0.230",
+        "username": "root",
+        "password": "Development!@#$%^230",
+        "uploadDir": "/workspace/html/emind-ui-next",
+        "buildScript": "npm run build:prod",
+        "privateKeyPath": "",
+        "lastDeploy": "2025-10-04 13:31:06",
+        "isBuilding": false,
+        "envId": "c866829c-f284-45f7-ab2d-77a314cda206"
+      },
+      "taskId": "2be9e063-d927-4a7f-ad56-37431a106ccf",
+      "isRunning": false,
+      "status": "failed",
+      "st": "2025-10-04 13:31:06",
+      "et": "2025-10-04 13:31:06"
+    },
+    {
+      "config": {
+        "appName": "eMind-Cloud",
+        "appWorkDir": "D:\\workspace\\emind-ui-next",
+        "uploadFile": "dist.zip",
+        "envName": "dev",
+        "host": "192.168.0.230",
+        "username": "root",
+        "password": "Development!@#$%^230",
+        "uploadDir": "/workspace/html/emind-ui-next",
+        "buildScript": "npm run build:prod",
+        "privateKeyPath": "",
+        "lastDeploy": "2025-10-04 13:31:06",
+        "isBuilding": false,
+        "envId": "c866829c-f284-45f7-ab2d-77a314cda206"
+      },
+      "taskId": "6216f2cd-7082-4bc7-a6bd-f55a9ef7f0d5",
+      "isRunning": false,
+      "status": "failed",
+      "st": "2025-10-04 13:31:06",
+      "et": "2025-10-04 13:31:06"
+    },
+    {
+      "config": {
+        "appName": "eMind-Cloud",
+        "appWorkDir": "D:\\workspace\\emind-ui-next",
+        "uploadFile": "dist.zip",
+        "envName": "dev",
+        "host": "192.168.0.230",
+        "username": "root",
+        "password": "Development!@#$%^230",
+        "uploadDir": "/workspace/html/emind-ui-next",
+        "buildScript": "npm run build:prod",
+        "privateKeyPath": "",
+        "lastDeploy": "2025-10-04 13:31:06",
+        "isBuilding": false,
+        "envId": "c866829c-f284-45f7-ab2d-77a314cda206"
+      },
+      "taskId": "2df0d834-0d88-4131-bee3-ae3ffcb30ed1",
+      "isRunning": false,
+      "status": "failed",
+      "st": "2025-10-04 13:31:06",
+      "et": "2025-10-04 13:31:06"
+    },
+    {
+      "config": {
+        "appName": "eMind-Cloud",
+        "appWorkDir": "D:\\workspace\\emind-ui-next",
+        "uploadFile": "dist.zip",
+        "envName": "dev",
+        "host": "192.168.0.230",
+        "username": "root",
+        "password": "Development!@#$%^230",
+        "uploadDir": "/workspace/html/emind-ui-next",
+        "buildScript": "npm run build:prod",
+        "privateKeyPath": "",
+        "lastDeploy": "2025-10-04 13:31:06",
+        "isBuilding": false,
+        "envId": "c866829c-f284-45f7-ab2d-77a314cda206"
+      },
+      "taskId": "d4df7ef0-f1a2-4743-a8ed-569340ef3a60",
+      "isRunning": false,
+      "status": "failed",
+      "st": "2025-10-04 13:31:06",
+      "et": "2025-10-04 13:31:06"
+    },
+    {
+      "config": {
+        "appName": "eMind-Cloud",
+        "appWorkDir": "D:\\workspace\\emind-ui-next",
+        "uploadFile": "dist.zip",
+        "envName": "test",
+        "host": "192.168.0.233",
+        "username": "root",
+        "password": "Development!@#$%^233",
+        "uploadDir": "/workspace/html/emind-ui-next-http",
+        "buildScript": "npm run build:prod",
+        "privateKeyPath": "",
+        "lastDeploy": "2025-09-12 11:51:33",
+        "isBuilding": false,
+        "envId": "d65a0133-6fab-4caf-8ad1-746bde299b66"
+      },
+      "taskId": "eab80538-ca80-4ed5-978c-15c9c2d87a8f",
+      "isRunning": false,
+      "status": "failed",
+      "st": "2025-10-04 13:31:48",
+      "et": "2025-10-04 13:31:48"
+    },
+    {
+      "config": {
+        "appName": "eVpp",
+        "appWorkDir": "D:\\workspace\\vpp-v2",
+        "uploadFile": "dist.zip",
+        "envName": "test",
+        "host": "192.168.0.234",
+        "username": "root",
+        "password": "Development!@#$%^234",
+        "uploadDir": "/workspace/html/emind-vpp",
+        "buildScript": "npm run build:prod",
+        "lastDeploy": "2025-06-27 15:34:03",
+        "isBuilding": false,
+        "envId": "1545ba04-7909-4f12-acbf-3cf32252bd32"
+      },
+      "taskId": "f5a3e2a2-e071-4b7e-9e9d-4b07a4f9a9b9",
+      "isRunning": false,
+      "status": "failed",
+      "st": "2025-10-04 13:32:15",
+      "et": "2025-10-04 13:32:15"
     }
   ]
 }

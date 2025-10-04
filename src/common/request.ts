@@ -48,5 +48,16 @@ const put_json = __create_request(function (url, data) {
   })
 })
 
+const delete_json = __create_request(function (url, data) {
+  const absUrl = API_HOST + url
+  return fetch(absUrl, {
+    method: 'delete',
+    headers: {
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify(data)
+  })
+})
 
-export { get_json, post_json, put_json }
+
+export { get_json, post_json, put_json, delete_json }

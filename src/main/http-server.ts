@@ -4,7 +4,7 @@ import bodyParser from 'body-parser'
 import router from './router'
 import { loadDB, saveDB, findEnv } from "./model/db"
 import { getTasks } from './deploy'
-import { addEnvironment, buildEnvironment, configEnvironment, getEnvByEnvId } from './model/dao'
+import { addEnvironment, buildEnvironment, configEnvironment, getEnvByEnvId, addApplication, removeApplication, updateApplication, getApplicationById } from './model/dao'
 const server = express()
 
 server.use(cors())
@@ -29,6 +29,30 @@ server.post('/api/requestData', async (req, res) => {
 server.get('/api/app', (req, res) => {
   const db = loadDB()
   res.json(db)
+})
+
+server.post('/api/app', (req, res) => {
+  const payload = req.body
+  const app = addApplication(payload)
+  res.json(app)
+})
+
+server.get('/api/app/:appId', (req, res) => {
+  const appId = req.params.appId
+  const app = getApplicationById(appId)
+  res.json(app)
+})
+
+server.put('/api/app', (req, res) => {
+  const payload = req.body
+  const app = updateApplication(payload)
+  res.json(app)
+})
+
+server.delete('/api/app', (req, res) => {
+  const appId = req.body.appId
+  const app = removeApplication(appId)
+  res.json(app)
 })
 
 
@@ -81,3 +105,7 @@ server.post('/api/build', async (req, res) => {
   const r = await buildEnvironment(payload)
   res.json(r)
 })
+
+
+
+

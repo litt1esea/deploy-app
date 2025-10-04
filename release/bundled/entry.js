@@ -104283,6 +104283,18 @@ function addApplication(data) {
   saveDB(db);
   return appInfo;
 }
+function getApplicationById(appId) {
+  const db = loadDB();
+  return db.appList.find((app2) => app2.appId === appId);
+}
+function updateApplication(data) {
+  const db = loadDB();
+  const appInfo = db.appList.find((app2) => app2.appId === data.appId);
+  appInfo.appName = data.appName;
+  appInfo.appWorkDir = data.appWorkDir;
+  saveDB(db);
+  return appInfo;
+}
 function removeApplication(appId) {
   const db = loadDB();
   db.appList = db.appList.filter((app2) => app2.appId !== appId);
@@ -104491,6 +104503,26 @@ server.get("/api/app", (req, res) => {
   const db = loadDB();
   res.json(db);
 });
+server.post("/api/app", (req, res) => {
+  const payload = req.body;
+  const app2 = addApplication(payload);
+  res.json(app2);
+});
+server.get("/api/app/:appId", (req, res) => {
+  const appId = req.params.appId;
+  const app2 = getApplicationById(appId);
+  res.json(app2);
+});
+server.put("/api/app", (req, res) => {
+  const payload = req.body;
+  const app2 = updateApplication(payload);
+  res.json(app2);
+});
+server.delete("/api/app", (req, res) => {
+  const appId = req.body.appId;
+  const app2 = removeApplication(appId);
+  res.json(app2);
+});
 server.get("/api/tasks", async (req, res) => {
   const tasks = await getTasks();
   res.json(tasks);
@@ -104543,10 +104575,6 @@ app.on("ready", () => {
       nodeIntegration: false,
       contextIsolation: true,
       devTools: true
-      // webSecurity: false,
-      // experimentalFeatures: true,
-      // enableRemoteModule: false,
-      // sandbox: false,
     }
   });
   mainWindow.loadURL(url);

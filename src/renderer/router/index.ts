@@ -2,7 +2,7 @@ import { createWebHistory, createRouter, createWebHashHistory } from 'vue-router
 
 import HomeView from '@/renderer/pages/Home/index.vue'
 import EnvEdit from '@/renderer/pages/EnvEdit/index.vue'
-import AddApplication from '@/renderer/pages/AddApplication/index.vue'
+import AppEdit from '@/renderer/pages/AppEdit/index.vue'
 
 const routes = [
   {
@@ -17,9 +17,9 @@ const routes = [
     props: true,
   },
   {
-    name: 'AddApplication',
-    path: '/add-application',
-    component: AddApplication,
+    name: 'AppEdit',
+    path: '/app-edit/:appId?',
+    component: AppEdit,
     props: true,
   }
 ]

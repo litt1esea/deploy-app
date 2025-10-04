@@ -15,6 +15,23 @@ export function addApplication(data) {
 }
 
 
+export function getApplicationById(appId) {
+  const db = loadDB()
+  return db.appList.find(app => app.appId === appId)
+}
+
+
+export function updateApplication(data) {
+  const db = loadDB()
+  const appInfo = db.appList.find(app => app.appId === data.appId)
+  appInfo.appName = data.appName
+  appInfo.appWorkDir = data.appWorkDir
+  saveDB(db)
+  return appInfo
+}
+
+
+
 export function removeApplication(appId) {
   const db = loadDB()
   db.appList = db.appList.filter(app => app.appId !== appId)

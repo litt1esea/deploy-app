@@ -1,126 +1,6 @@
 {
   "appList": [
     {
-      "appName": "emind-station",
-      "appWorkDir": "d:\\workspace\\emind-station-ui",
-      "envList": [
-        {
-          "envName": "dev",
-          "host": "172.19.10.201",
-          "username": "root",
-          "password": "123.com",
-          "uploadDir": "/workspace/html/emind-station",
-          "buildScript": "npm run build",
-          "privateKeyPath": "",
-          "lastDeploy": "2025-09-17 17:22:00",
-          "isBuilding": false,
-          "envId": "9e2b6f8b-e113-41f5-9c64-373b84b2fcd1"
-        },
-        {
-          "envName": "dev",
-          "host": "172.19.10.201",
-          "username": "root",
-          "password": "123.com",
-          "uploadDir": "/workspace/html/emind-station",
-          "buildScript": "npm run build",
-          "privateKeyPath": "",
-          "lastDeploy": null,
-          "isBuilding": false,
-          "envId": "619af8dd-3c23-4cb3-b3c9-11903d8d3069"
-        },
-        {
-          "envName": "dev12",
-          "host": "172.19.10.201",
-          "username": "root",
-          "password": "123.com",
-          "uploadDir": "/workspace/html/emind-station",
-          "buildScript": "npm run build",
-          "privateKeyPath": "",
-          "lastDeploy": null,
-          "isBuilding": false,
-          "envId": "0005d2d2-6762-4103-8fe2-4a483372a0d3"
-        },
-        {
-          "envName": "dev12",
-          "host": "172.19.10.201",
-          "username": "root",
-          "password": "123.com",
-          "uploadDir": "/workspace/html/emind-station",
-          "buildScript": "npm run build",
-          "privateKeyPath": "",
-          "lastDeploy": null,
-          "isBuilding": false,
-          "envId": "5dfa9ec8-416a-429c-85e3-e614218b63a8"
-        },
-        {
-          "envName": "dev12",
-          "host": "172.19.10.201",
-          "username": "root",
-          "password": "123.com",
-          "uploadDir": "/workspace/html/emind-station",
-          "buildScript": "npm run build",
-          "privateKeyPath": "",
-          "lastDeploy": null,
-          "isBuilding": false,
-          "envId": "672cf17e-8125-4e5c-a0dc-4a2b7a4dc9d2"
-        },
-        {
-          "envName": "dev12",
-          "host": "172.19.10.201",
-          "username": "root",
-          "password": "123.com",
-          "uploadDir": "/workspace/html/emind-station",
-          "buildScript": "npm run build",
-          "privateKeyPath": "",
-          "lastDeploy": null,
-          "isBuilding": false,
-          "envId": "2fa5b025-6a93-44c6-b3d7-083e39c2c374"
-        }
-      ],
-      "appId": "f28b762f-7fa4-4647-9f39-a7b626bb6113"
-    },
-    {
-      "appName": "e-center",
-      "appWorkDir": "d:\\workspace\\ecenter-ui",
-      "envList": [
-        {
-          "envName": "dev",
-          "host": "192.168.0.230",
-          "username": "root",
-          "password": "Development!@#$%^230",
-          "uploadDir": "/workspace/html/ecenter-ui",
-          "buildScript": "npm run build",
-          "lastDeploy": "2025-09-17 16:47:35",
-          "isBuilding": false,
-          "envId": "3e78ceea-d346-4c19-aa9c-a710b08321cd"
-        },
-        {
-          "envName": "test",
-          "host": "192.168.0.233",
-          "username": "root",
-          "password": "Development!@#$%^233",
-          "uploadDir": "/workspace/html/ecenter-ui",
-          "buildScript": "npm run build",
-          "lastDeploy": "2024-06-02 09:54:02",
-          "envId": "f3924789-2614-41dd-b4b1-eac1b752cbcd",
-          "isBuilding": false
-        },
-        {
-          "envName": "prod",
-          "host": "120.24.184.101",
-          "username": "root",
-          "password": "Jdny@!@#101",
-          "uploadDir": "/workspace/ecenter/ecenter-web",
-          "buildScript": "npm run build",
-          "privateKeyPath": "C:\\Users\\Administrator\\.ssh\\id_rsa",
-          "lastDeploy": null,
-          "isBuilding": false,
-          "envId": "b42eab3f-7aa7-4e40-9c53-8e35eac36a37"
-        }
-      ],
-      "appId": "49b58c44-1085-4335-86ac-1b4db701f9ff"
-    },
-    {
       "appName": "eVpp",
       "appWorkDir": "D:\\workspace\\vpp-v2",
       "envList": [
@@ -179,6 +59,12 @@
         }
       ],
       "appId": "fc31f7c9-ff0c-4ebd-90f6-27328a7bce46"
+    },
+    {
+      "appName": "App",
+      "appWorkDir": "C:\\Users\\53215\\Desktop\\Work\\project\\pick-a-color",
+      "envList": [],
+      "appId": "cbaa3545-05ac-4353-bd5a-a2faed5b4c54"
     }
   ],
   "history": [

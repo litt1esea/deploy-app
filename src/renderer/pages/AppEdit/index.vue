@@ -29,7 +29,7 @@
 import { Back } from '@element-plus/icons-vue'
 import { useRouter } from 'vue-router'
 import { ref } from 'vue'
-import { post_json } from '@/common/request'
+import { post_json, put_json, get_json } from '@/common/request'
 const router = useRouter()
 
 function goBack() {
@@ -43,9 +43,46 @@ const formData = ref({
 })
 
 
+const props = defineProps({
+    appId: {
+        type: String,
+        default: ''
+    }
+})
+
+
+
+
+async function getApp() {
+    const app = await get_json(`/app/${props.appId}`)
+    console.log('app', app);
+    
+    Object.assign(formData.value, app)
+}
+
+
+
+
+if (props.appId) {
+    getApp()
+}
+
+console.log('appId', props.appId);
+
+
+
 async function onConfirm() {
     try {
-        await post_json('/add-app', formData.value)
+        if (props.appId) {
+            const putData = {
+                appId: props.appId,
+                ...formData.value
+            }
+            await put_json('/app', putData)
+        } else {
+            await post_json('/app', formData.value)
+        }
+
         router.back()
     } catch (error) {
         console.log('error', error);

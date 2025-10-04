@@ -1,7 +1,18 @@
 <template>
   <div class="application-list">
     <div class="app-list">
-      <el-card shadow="hover" class="app-card" v-for="app in appList" :key="app.id" :header="app.appName">
+      <el-card shadow="hover" class="app-card" v-for="app in appList" :key="app.id" >
+
+        <template #header>
+          <div class="app-name">
+            <span>{{ app.appName }}</span>
+            <el-button type="primary" link :icon="Edit" @click="onEditApp(app.appId)" >编辑</el-button>
+            <el-button type="primary" link :icon="Delete" @click="onDeleteApp(app.appId)" >删除</el-button>
+          </div>
+        </template>
+
+
+
         <div class="">文件目录：<span class="app-work-dir">{{ app.appWorkDir }}</span></div>
         <EnvList :envList="app.envList" :appId="app.appId" />
 
@@ -69,11 +80,11 @@
 
 <script setup>
 import { onUnmounted, ref } from 'vue'
-import { Plus } from '@element-plus/icons-vue'
+import { Plus, Edit, Delete, } from '@element-plus/icons-vue'
 import { useRouter } from 'vue-router'
-import { get_json } from '@/common/request'
+import { get_json, delete_json } from '@/common/request'
 import EnvList from '../EnvList/index.vue'
-
+import { ElMessageBox } from 'element-plus'
 
 const router = useRouter()
 const appList = ref([])
@@ -125,6 +136,38 @@ function onAddEnv(appId) {
     }
   })
 }
+
+
+function onEditApp(appId) {
+  router.push({
+    name: 'AppEdit',
+    params: {
+      appId
+    }
+  })
+}
+
+async function onDeleteApp(appId) {
+  console.log('onDeleteApp', appId);
+
+
+  const ok = await ElMessageBox.confirm('确定删除该应用吗？', '提示', {
+    confirmButtonText: '确定',
+    cancelButtonText: '取消',
+    type: 'warning',
+  })
+  if (!ok) {
+    return
+  }
+
+
+  const r = await delete_json('/app', { appId })
+  console.log('r', r);
+  
+  // delete_json('/app', { appId })
+  updateAppList()
+}
+
 
 
 function calcTime(time, endTime) {
